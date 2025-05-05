@@ -172,3 +172,13 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+# Ne jamais pousser ces fichiers sensibles
+.env
+.streamlit/secrets.toml
+
+# Cache & fichiers inutiles
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.DS_Store
