@@ -23,7 +23,7 @@ translations = {
         "premium_title": "🔐 Accès Premium",
         "enter_code": "Entrez votre code Premium",
         "code_valid": "✅ Mode Premium activé - Fonctionnalités débloquées !",
-        "code_invalid": "❌ Code incorrect - Essayez 'PREMIUM2025'",
+        "code_invalid": "❌ Code incorrect - Essayez 'PREMIUM_CODE'",
         "dashboard": "📊 Tableau de bord de la campagne",
         "analysis": "📈 Analyse détaillée",
         "charts": "📊 Graphiques de la campagne",
@@ -65,7 +65,7 @@ translations = {
         "premium_title": "🔐 Premium Access",
         "enter_code": "Enter your Premium code",
         "code_valid": "✅ Premium mode activated - Features unlocked!",
-        "code_invalid": "❌ Incorrect code - Try 'PREMIUM2025'",
+        "code_invalid": "❌ Incorrect code - Try 'PREMIUM_CODE'",
         "dashboard": "📊 Campaign Dashboard",
         "analysis": "📈 Detailed Analysis",
         "charts": "📊 Campaign Charts",
@@ -107,7 +107,7 @@ translations = {
         "premium_title": "🔐 الوصول المميز",
         "enter_code": "أدخل رمز Premium",
         "code_valid": "✅ تم تفعيل الوضع المميز - الميزات متاحة الآن!",
-        "code_invalid": "❌ الرمز غير صحيح - جرب 'PREMIUM2025'",
+        "code_invalid": "❌ الرمز غير صحيح - جرب 'PREMIUM_CODE'",
         "dashboard": "📊 لوحة تحكم الحملة",
         "analysis": "📈 التحليل التفصيلي",
         "charts": "📊 الرسوم البيانية للحملة",
@@ -336,7 +336,7 @@ def main():
 
     # Section Premium
     st.sidebar.markdown(f"## {t['premium_title']}")
-    premium_code = "PREMIUM2025"
+    premium_code = PREMIUM_CODE
     code_saisi = st.sidebar.text_input(t["enter_code"], type="password", help="Contactez-nous pour obtenir votre code d'accès premium")
     
     premium_activated = st.session_state.get("premium_activated", False)
